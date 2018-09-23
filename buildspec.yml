@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id 29856753-d1bd-4841-9004-aec17f694d04 --s3-bucket trave-time-tracker-node-js 
+      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id 29856753-d1bd-4841-9004-aec17f694d04 --s3-bucket ttt-node-js 
                                    --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
